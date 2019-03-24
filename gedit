@@ -1,0 +1,19 @@
+Gedit Cheatsheet
+
+
+Strg + m 			=> Comment marked lines
+Strg + Shift + m 	=> Uncomment marked lines
+
+Strg + o 			=> Open new file
+
+Strg + Shift + c	=> Enter Multi-line editing
+Strg + e			=> Add Cursor in Multi-line editing
+Esc					=> Escapes Multi-Line editing
+
+Strg + Space		=> Word completion 
+
+Shift + F7			=> Start Spell check
+
+Strg + Alt + n		=> Split Window
+
+Strg + h 			=> Find and Replace
