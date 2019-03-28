@@ -1,1 +1,56 @@
+Strg + j = neue Kommandozeile unterhalb des Cursors
+Strg + k = neue Kommandozeile oberhalb des Cursors
+Shift + Return = Neuer Zeilenumbruch im selben Befehl
+Strg + Space = Auto. Vervollständigung
 
+
+Listen/arrays/Folge starten ab 1! und sind Verschachtelbar
+
+
+# = Kommentar
+?x = Hilfe für Befehl X
+
+restart = am Anfang einfügen (löscht variabeln)
+x := proc(Parameter)  =Function namens X
+end proc;(:) = ended Function X (:unterdrückt die Wiederholung des Befehles für den User)
+with(x): = importiere Packet X
+nops(x) = Number of Operants (Mächtigkeit der Liste)
+op(x) = Elemente der Liste
+expand(x) = auflösen derformel
+evalf(x) = Ergebnis in Kommazahlen
+  Digits:=x = Runde auf X kommastellen 
+  oder:
+  sqrt(2) = 2^(1/2)
+  sqrt(2.) = (1.414213563)
+sum(x) = summe
+plot(x,(bereich),(Farbe)) = Zeichne X
+
+
+/*  Funktion f
+f:= x-> x^2 
+*/
+
+/*  Funktion Betrag(x)
+Betrag := proc(x)
+local erg;
+if x<0 then
+  erg := -x;
+else
+  erg := x;
+fi;
+erg;
+end proc:
+*/
+
+/* For Schleife
+for el in Liste do el^2 od;
+*/
+
+/*  Verschachtelte Listen
+Liste[2][3] = zeige das 3 element in dem 2ten element von Liste
+*/
+
+/*  Animierte Sinuswelle von 0-4Pi, fuer 10 t, mit 60 fps 
+with(plots):
+animate(plot,[sin(3*x+t),x=1..5],t=0..10,frames=60);
+*/
