@@ -16,6 +16,7 @@ end proc;(:) = ended Function X (:unterdrückt die Wiederholung des Befehles fü
 with(x): = importiere Packet X
 nops(x) = Number of Operants (Mächtigkeit der Liste)
 op(x) = Elemente der Liste
+solve(x) = Nullstellen einer Funktion
 expand(x) = auflösen derformel
 evalf(x) = Ergebnis in Kommazahlen
   Digits:=x = Runde auf X kommastellen 
@@ -24,6 +25,7 @@ evalf(x) = Ergebnis in Kommazahlen
   sqrt(2.) = (1.414213563)
 sum(x) = summe
 plot(x,(bereich),(Farbe)) = Zeichne X
+subsop(pos.ofElement=newElement, List) replaces the x with y in list 
 
 
 /*  Funktion f
@@ -49,6 +51,18 @@ for el in Liste do el^2 od;
 /*  Verschachtelte Listen
 Liste[2][3] = zeige das 3 element in dem 2ten element von Liste
 */
+
+
+ 
+lc := proc( s, u, t, v )
+    description "form a linear combination of the arguments";
+    s * u + t * v
+end proc; 
+
+
+lc≔proc(s,u,t,v)description
+"form a linear combination of the arguments";s*u
++t*vend proc
 
 /*  Animierte Sinuswelle von 0-4Pi, fuer 10 t, mit 60 fps 
 with(plots):
